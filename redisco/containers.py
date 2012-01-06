@@ -506,8 +506,8 @@ class SortedSet(Container):
         return self.zrangebyscore(value, value)
 
     DELEGATEABLE_METHODS = ('zadd', 'zrem', 'zincrby', 'zrank',
-            'zrevrank', 'zrange', 'zrevrange', 'zrangebyscore', 'zcard',
-            'zscore', 'zremrangebyrank', 'zremrangebyscore')
+            'zrevrank', 'zrange', 'zrevrange', 'zrangebyscore', 'zrevrangebyscore',
+            'zcard', 'zscore', 'zremrangebyrank', 'zremrangebyscore')
 
 
 class NonPersistentList(object):
