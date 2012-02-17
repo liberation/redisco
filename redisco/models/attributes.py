@@ -206,7 +206,7 @@ class DateTimeField(Attribute):
                     (self.name, type(value)))
         if value is None:
             return None
-        return "%d.%d" % (time.mktime(value.timetuple()),  value.microsecond)
+        return "%d.%06d" % (time.mktime(value.timetuple()),  value.microsecond)
 
     def value_type(self):
         return datetime
